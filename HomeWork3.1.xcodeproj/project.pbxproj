@@ -13,6 +13,8 @@
 		A653635124C6F260008D8278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A653635024C6F260008D8278 /* Assets.xcassets */; };
 		A653635424C6F260008D8278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A653635324C6F260008D8278 /* Preview Assets.xcassets */; };
 		A653635724C6F260008D8278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A653635524C6F260008D8278 /* LaunchScreen.storyboard */; };
+		A653635F24C6F6C0008D8278 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653635E24C6F6C0008D8278 /* ColorCircle.swift */; };
+		A653636124C70121008D8278 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653636024C70121008D8278 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A653635324C6F260008D8278 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A653635624C6F260008D8278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A653635824C6F260008D8278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A653635E24C6F6C0008D8278 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		A653636024C70121008D8278 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A653634A24C6F25D008D8278 /* AppDelegate.swift */,
 				A653634C24C6F25D008D8278 /* SceneDelegate.swift */,
 				A653634E24C6F25D008D8278 /* ContentView.swift */,
+				A653635E24C6F6C0008D8278 /* ColorCircle.swift */,
+				A653636024C70121008D8278 /* RoundedButton.swift */,
 				A653635024C6F260008D8278 /* Assets.xcassets */,
 				A653635524C6F260008D8278 /* LaunchScreen.storyboard */,
 				A653635824C6F260008D8278 /* Info.plist */,
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A653634B24C6F25D008D8278 /* AppDelegate.swift in Sources */,
+				A653636124C70121008D8278 /* RoundedButton.swift in Sources */,
+				A653635F24C6F6C0008D8278 /* ColorCircle.swift in Sources */,
 				A653634D24C6F25D008D8278 /* SceneDelegate.swift in Sources */,
 				A653634F24C6F25D008D8278 /* ContentView.swift in Sources */,
 			);

@@ -8,9 +8,47 @@
 
 import SwiftUI
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 struct ContentView: View {
+    
+    @State private var currentLight = CurrentLight.red
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color(.black)
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                ColorCircle(color: .init(red: 1,
+                                         green: 0,
+                                         blue: 0,
+                                         alpha: currentLight == .red ? 1 : 0.5))
+                ColorCircle(color: .init(red: 1,
+                                         green: 1,
+                                         blue: 0,
+                                         alpha: currentLight == .yellow ? 1 : 0.5))
+                ColorCircle(color: .init(red: 0,
+                                         green: 1,
+                                         blue: 0,
+                                         alpha: currentLight == .green ? 1 : 0.5))
+                Spacer()
+                RoundedButton(action: { self.switchLight() })
+            }
+            .padding()
+        }
+    }
+    
+    private func switchLight() {
+        switch currentLight {
+        case .red:
+            currentLight = .yellow
+        case .yellow:
+            currentLight = .green
+        case .green:
+            currentLight = .red
+        }
     }
 }
 
