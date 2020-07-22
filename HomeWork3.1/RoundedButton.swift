@@ -22,9 +22,9 @@ struct RoundedButton: View {
         .frame(width: 150, height: 50, alignment: .center)
         .background(Color(.blue))
         .overlay(
-        RoundedRectangle(cornerRadius: 25)
-            .stroke(Color.white, lineWidth: 4))
-        .cornerRadius(25)
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color.white, lineWidth: 4))
+            .cornerRadius(25)
     }
 }
 

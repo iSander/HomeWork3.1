@@ -21,18 +21,18 @@ struct ContentView: View {
             Color(.black)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                ColorCircle(color: .init(red: 1,
-                                         green: 0,
-                                         blue: 0,
-                                         alpha: currentLight == .red ? 1 : 0.5))
-                ColorCircle(color: .init(red: 1,
-                                         green: 1,
-                                         blue: 0,
-                                         alpha: currentLight == .yellow ? 1 : 0.5))
-                ColorCircle(color: .init(red: 0,
-                                         green: 1,
-                                         blue: 0,
-                                         alpha: currentLight == .green ? 1 : 0.5))
+                ColorCircle(color: UIColor(red: 1,
+                                           green: 0,
+                                           blue: 0,
+                                           alpha: currentLight == .red ? 1 : 0.5))
+                ColorCircle(color: UIColor(red: 1,
+                                           green: 1,
+                                           blue: 0,
+                                           alpha: currentLight == .yellow ? 1 : 0.5))
+                ColorCircle(color: UIColor(red: 0,
+                                           green: 1,
+                                           blue: 0,
+                                           alpha: currentLight == .green ? 1 : 0.5))
                 Spacer()
                 RoundedButton(action: { self.switchLight() })
             }
